@@ -1,11 +1,12 @@
+@import "./global.scss";
 .app {
   height: 100vh;
   .sections {
     width: 100%;
-    height: calc(100vh - 100px);
-    background-color: palegreen;
+    height: calc(100vh - $topbarHeight);
+    background-color: white;
     position: relative;
-    top: 100px;
+    top: $topbarHeight;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
@@ -15,7 +16,7 @@
 
     > *{
       width: 100vw;
-      height: calc(100vh - 100px);
+      height: calc(100vh - $topbarHeight);
       scroll-snap-align: start;
     }
   }

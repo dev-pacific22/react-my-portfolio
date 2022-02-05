@@ -2,7 +2,7 @@
 
 .topbar {
   width: 100%;
-  height: 100px;
+  height: $topbarHeight;
   background-color: $secondaryColor;
   color: $mainColor;
   position: fixed;
