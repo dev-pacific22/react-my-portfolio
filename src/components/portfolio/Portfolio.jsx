@@ -1,37 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { portfolioListData } from "../../data";
 import PortfolioList from "../portfoliolist/PortfolioList";
 import "./portfolio.scss";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
-  const listFolio = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "react-native",
-      title: "React Native",
-    },
-    {
-      id: "android",
-      title: "Android",
-    },
-    {
-      id: "ios",
-      title: "iOS",
-    },
-    {
-      id: "flutter",
-      title: "Flutter",
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    let selectedProjects = portfolioListData.find(
+      (item) => item.id === selected
+    ).projects;
+    setProjects(selectedProjects);
+  }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {listFolio.map((item) => (
+        {portfolioListData.map((item) => (
           <PortfolioList
             id={item.id}
             title={item.title}
@@ -41,30 +28,14 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="assets/content/soccer.jpg" alt="" />
-          <h3>GDPR Consent App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/content/soccer.jpg" alt="" />
-          <h3>GDPR Consent App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/content/soccer.jpg" alt="" />
-          <h3>GDPR Consent App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/content/soccer.jpg" alt="" />
-          <h3>GDPR Consent App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/content/soccer.jpg" alt="" />
-          <h3>GDPR Consent App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/content/soccer.jpg" alt="" />
-          <h3>GDPR Consent App</h3>
-        </div>
+        {projects?.map((item) => {
+          return (
+            <div className="item">
+              <img src={item?.img} alt="" />
+              <h3>{item?.title}</h3>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
