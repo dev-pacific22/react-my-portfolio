@@ -133,4 +133,32 @@ const worksData = [
   },
 ];
 
-export { portfolioListData, worksData };
+const testimonialsData = [
+  {
+    id: 1,
+    name: "Tom Durden",
+    title: "Senior Developer",
+    img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    icon: "assets/twitter.png",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+  },
+  {
+    id: 2,
+    name: "Predrag Tokovic",
+    title: "Co-Founder Talento Today",
+    icon: "assets/youtube.png",
+    img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    desc: "In a football attack you would be the guy that receives the first pass of the goalkeeper. In development terms you are the person that wrote our the first piece of code that our current app has. Your importance for the beginning of our our attack gets even more visible if we take into account that you've created the onboarding process for our users. The development of following a private followers is one of the biggest promises we gave to our partners!",
+    featured: true,
+  },
+  {
+    id: 3,
+    name: "Martin Harold",
+    title: "CEO of ALBI",
+    img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    icon: "assets/linkedin.png",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+  },
+];
+
+export { portfolioListData, worksData, testimonialsData };
