@@ -5,3 +5,13 @@ $secondaryBackgroundColor: crimson;
 $topbarHeight: 80px;
 $menubarWidth: 300px;
 $sectionHeaderFontSize: 50px;
+
+// Responsive web design work
+
+$width: 768px;
+$mobileSectionHeaderFontSize: 20px;
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
