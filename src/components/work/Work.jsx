@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { worksData } from "../../data";
 import "./work.scss";
 
@@ -18,11 +18,29 @@ export default function Work() {
     }
   };
 
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
+
   return (
     <div className="works" id="works">
       <div
         className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+        style={
+          !isMobile
+            ? { transform: `translateX(-${currentSlide * 100}vw)` }
+            : { margin: `2px` }
+        }
       >
         {worksData.map((item) => (
           <div className="container">
