@@ -89,7 +89,8 @@
                 width: 25px;
                 height: 25px;
                 @include mobile {
-                  width: 15px;
+                  width: 20px;
+                  height: 20px;
                 }
               }
             }
@@ -97,7 +98,7 @@
               font-size: 20px;
 
               @include mobile {
-                font-size: 13px;
+                font-size: 14px;
               }
             }
             p {
@@ -111,6 +112,9 @@
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
+              @include mobile {
+                font-size: 12px;
+              }
             }
           }
         }
