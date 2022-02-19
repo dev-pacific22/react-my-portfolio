@@ -33,10 +33,15 @@ export default function Intro() {
             <a
               href="https://in.linkedin.com/in/bhagwat-karankar-720147126"
               target="_blank"
+              rel="noreferrer"
             >
               <LinkedIn className="icon" style={{ fill: "#0a66c2" }} />
             </a>
-            <a href="https://github.com/dev-pacific22" target="_blank">
+            <a
+              href="https://github.com/dev-pacific22"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHub className="icon" style={{ fill: "#323232" }} />
             </a>
 

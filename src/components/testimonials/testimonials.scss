@@ -1,12 +1,13 @@
 @import "../../global.scss";
 .testimonials {
-  background-color: $mainColor;
+  background-color: #3a4652;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   h1 {
     font-size: $sectionHeaderFontSize;
+    color: $mainColor;
     @include mobile {
       font-size: $mobileSectionHeaderFontSize;
     }
@@ -24,6 +25,7 @@
     .card {
       width: 350px;
       height: 65%;
+      background-color: $mainColor;
       border-radius: 15px;
       box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.8);
       display: flex;
