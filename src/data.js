@@ -6,32 +6,28 @@ const portfolioListData = [
       {
         id: 0,
         title: "Talento Today- Soccer App",
-        description:
-          "The Soccer App for connecting the players, coaches, and the scouts with each other",
+        description: "The Soccer App for connecting the players, coaches, and the scouts with each other",
         urls: "https://play.google.com/store/apps/details?id=com.talentotoday",
         img: "https://source.unsplash.com/random/400",
       },
       {
         id: 1,
         title: "Dynamic Yard",
-        description:
-          "The yard management tool- where you can check in the deliveries, can create various task and then check out the deliveries.",
+        description: "The yard management tool- where you can check in the deliveries, can create various task and then check out the deliveries.",
         urls: "https://play.google.com/store/apps/details?id=app.dynamicyard",
         img: "https://source.unsplash.com/random/450",
       },
       {
         id: 2,
         title: "Talento Today- Soccer App",
-        description:
-          "The Soccer App for connecting the players, coaches, and the scouts with each other",
+        description: "The Soccer App for connecting the players, coaches, and the scouts with each other",
         urls: "https://play.google.com/store/apps/details?id=com.talentotoday",
         img: "https://source.unsplash.com/random/350",
       },
       {
         id: 3,
         title: "Dynamic Yard",
-        description:
-          "The yard management tool- where you can check in the deliveries, can create various task and then check out the deliveries.",
+        description: "The yard management tool- where you can check in the deliveries, can create various task and then check out the deliveries.",
         urls: "https://play.google.com/store/apps/details?id=app.dynamicyard",
         img: "https://source.unsplash.com/random/500",
       },
@@ -50,8 +46,7 @@ const portfolioListData = [
       {
         id: 1,
         title: "Niva PRO",
-        description:
-          "The Patient Resource Outcome app where user data will remain with us and user can share doc at any point of time when he visit to another registry",
+        description: "The Patient Resource Outcome app where user data will remain with us and user can share doc at any point of time when he visit to another registry",
         urls: "https://play.google.com/store/apps/details?id=app.dynamicyard",
       },
     ],
@@ -63,8 +58,7 @@ const portfolioListData = [
       {
         id: 0,
         title: "Care Prime",
-        description:
-          "App for doc to connect with patient, and can give an consultation to the patient",
+        description: "App for doc to connect with patient, and can give an consultation to the patient",
         urls: "https://play.google.com/store/apps/details?id=com.talentotoday",
       },
       {
@@ -82,8 +76,7 @@ const portfolioListData = [
       {
         id: 0,
         title: "Care Prime",
-        description:
-          "App for doc to connect with patient, and can give an consultation to the patient",
+        description: "App for doc to connect with patient, and can give an consultation to the patient",
         urls: "https://play.google.com/store/apps/details?id=com.talentotoday",
       },
       {
@@ -101,8 +94,7 @@ const portfolioListData = [
       {
         id: 0,
         title: "Dynamic Yard",
-        description:
-          "The yard management tool- where you can check in the deliveries, can create various task and then check out the deliveries.",
+        description: "The yard management tool- where you can check in the deliveries, can create various task and then check out the deliveries.",
         urls: "https://play.google.com/store/apps/details?id=app.dynamicyard",
       },
     ],
@@ -112,16 +104,16 @@ const portfolioListData = [
 const worksData = [
   {
     id: "1",
-    icon: "./assets/mobile.png",
-    title: "Web Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    icon: "./assets/globe.png",
+    title: "Web App",
+    desc: "Intermidiate experince in web app development, some time created the web component in the web to use those independently or consume it in the mobile application through web views.",
     img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
   },
   {
     id: "2",
-    icon: "./assets/globe.png",
+    icon: "./assets/mobile.png",
     title: "Mobile Application",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "Expert Mobile Application developer, worked on multiple android and ios apps, from begining to end, includes requirement, designs, development, deployment and maintainance. Also, having greate experince in leading the mobile team, architecting the mobile apps and taring the fellow developers.",
     img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
   },
   {
@@ -140,7 +132,7 @@ const testimonialsData = [
     title: "Senior Developer",
     img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     icon: "assets/twitter.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+    desc: "Lucky to have the colleugue like you, which will always there and go to person in tough situation on which can rely confidently. The enthusiasm you shown agaisnt the work was amazing.",
   },
   {
     id: 2,
@@ -153,11 +145,11 @@ const testimonialsData = [
   },
   {
     id: 3,
-    name: "Martin Harold",
-    title: "CEO of ALBI",
+    name: "Felix Akinlaja",
+    title: "Product Manager",
     img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     icon: "assets/linkedin.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+    desc: "Always had great experience to work with him, he is very good knowledgeble and experienced in the app development, which help the to achieve the product development vision in reality.",
   },
 ];
 
