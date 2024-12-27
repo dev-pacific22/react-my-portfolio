@@ -45,6 +45,9 @@
         width: 400px;
         height: 40px;
         font-size: 16px;
+        padding-inline: 16px;
+        padding-block: 6px;
+        margin-block: 8px;
         @include mobile {
           width: 200px;
           height: 30px;
@@ -55,6 +58,9 @@
         width: 400px;
         height: 150px;
         font-size: 16px;
+        padding-inline: 16px;
+        margin-block: 8px;
+        padding-block: 6px;
         @include mobile {
           width: 200px;
           height: 100px;
@@ -66,6 +72,7 @@
         height: 50px;
         font-size: 16px;
         color: $mainColor;
+        margin-block: 12px;
         background-color: $secondaryBackgroundColor;
         border: none;
         border-radius: 10px;
